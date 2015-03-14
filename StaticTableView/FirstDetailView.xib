@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FirstDetailView" customModule="StaticTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVf-id-KmL">
+                    <rect key="frame" x="23" y="8" width="106" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="KNd-Oq-JKZ"/>
+                        <constraint firstAttribute="width" constant="106" id="rIo-Sc-N5T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nf4-MO-Ucy">
+                    <rect key="frame" x="23" y="104" width="555" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIS-75-f8d">
+                    <rect key="frame" x="23" y="171" width="555" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v8z-5H-72R">
+                    <rect key="frame" x="23" y="37" width="555" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF8-34-dWW">
+                    <rect key="frame" x="23" y="75" width="112" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="asP-jn-78G"/>
+                        <constraint firstAttribute="height" constant="21" id="vnO-VQ-i9x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDN-DM-20a">
+                    <rect key="frame" x="23" y="142" width="71" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="AWP-Ws-paQ"/>
+                        <constraint firstAttribute="width" constant="71" id="hdG-i3-w7q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="v8z-5H-72R" firstAttribute="top" secondItem="jVf-id-KmL" secondAttribute="bottom" constant="8" symbolic="YES" id="27q-Cd-eRf"/>
+                <constraint firstItem="nf4-MO-Ucy" firstAttribute="leading" secondItem="IF8-34-dWW" secondAttribute="leading" id="52M-Lv-IP5"/>
+                <constraint firstItem="GDN-DM-20a" firstAttribute="top" secondItem="nf4-MO-Ucy" secondAttribute="bottom" constant="8" symbolic="YES" id="5uU-an-G0p"/>
+                <constraint firstItem="ZIS-75-f8d" firstAttribute="leading" secondItem="GDN-DM-20a" secondAttribute="leading" id="8bW-67-0Kb"/>
+                <constraint firstItem="v8z-5H-72R" firstAttribute="leading" secondItem="jVf-id-KmL" secondAttribute="leading" id="AIb-VC-06w"/>
+                <constraint firstItem="v8z-5H-72R" firstAttribute="trailing" secondItem="nf4-MO-Ucy" secondAttribute="trailing" id="BGI-5U-HEA"/>
+                <constraint firstItem="jVf-id-KmL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="PAl-Tb-6eE"/>
+                <constraint firstItem="GDN-DM-20a" firstAttribute="leading" secondItem="nf4-MO-Ucy" secondAttribute="leading" id="SS9-Dh-AbP"/>
+                <constraint firstItem="v8z-5H-72R" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Uvh-yx-2UD"/>
+                <constraint firstItem="jVf-id-KmL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="ela-9N-4lb"/>
+                <constraint firstItem="nf4-MO-Ucy" firstAttribute="top" secondItem="IF8-34-dWW" secondAttribute="bottom" constant="8" symbolic="YES" id="fSk-km-9pj"/>
+                <constraint firstItem="ZIS-75-f8d" firstAttribute="trailing" secondItem="nf4-MO-Ucy" secondAttribute="trailing" id="hJM-an-fBB"/>
+                <constraint firstItem="v8z-5H-72R" firstAttribute="leading" secondItem="IF8-34-dWW" secondAttribute="leading" id="rQs-rk-sPt"/>
+                <constraint firstItem="IF8-34-dWW" firstAttribute="top" secondItem="v8z-5H-72R" secondAttribute="bottom" constant="8" symbolic="YES" id="ruw-jd-CEz"/>
+                <constraint firstItem="ZIS-75-f8d" firstAttribute="top" secondItem="GDN-DM-20a" secondAttribute="bottom" constant="8" symbolic="YES" id="ucd-4a-inD"/>
+            </constraints>
+            <connections>
+                <outlet property="op1TextField" destination="v8z-5H-72R" id="Z5G-6G-pRk"/>
+                <outlet property="op2TextField" destination="nf4-MO-Ucy" id="NeL-G6-qsS"/>
+                <outlet property="op3TextField" destination="ZIS-75-f8d" id="1YG-FZ-jjb"/>
+            </connections>
+            <point key="canvasLocation" x="336" y="442"/>
+        </view>
+    </objects>
+</document>
